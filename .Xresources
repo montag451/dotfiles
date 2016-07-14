@@ -1,0 +1,18 @@
+XTerm.*.termName: xterm-256color
+XTerm.*.background: black
+XTerm.*.foreground: white
+XTerm.*.metaSendsEscape: true
+XTerm.*.ttyModes: erase ^?
+XTerm.*.backarrowKeyIsErase: true
+UXTerm.*.termName: xterm-256color
+UXTerm.*.background: black
+UXTerm.*.foreground: white
+UXTerm.*.metaSendsEscape: true
+UXTerm.*.ttyModes: erase ^?
+UXTerm.*.backarrowKeyIsErase: true
+Xcursor.size: 0
+Xcursor.theme:
+Xcursor.theme_core: 1
+Xft.antialias: 1
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
