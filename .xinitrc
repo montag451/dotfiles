@@ -1,2 +1,3 @@
+xrdb -load $HOME/.Xresources
 xautolock -time 10 -locker slock &
-xmonad
+exec xmonad
