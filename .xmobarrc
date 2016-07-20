@@ -1,0 +1,21 @@
+Config { font = "xft:Sans:style=Regular:size=10"
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader%}%datel%{%cpu% | %memory% | %dynnetwork%"
+       , commands = [ Run StdinReader
+                    , Run Cpu [ "-L", "3"
+                              , "-H", "50"
+                              , "--low", "green"
+                              , "--normal", "orange"
+                              , "--high", "red"
+                              ] 10
+                    , Run Memory [ "-t", "Mem: <usedratio>%" ] 10
+                    , Run DynNetwork [ "-L", "1000"
+                                     , "-H", "5000"
+                                     , "--low", "green"
+                                     , "--normal", "orange"
+                                     , "--high", "red"
+                                     ] 10
+                    , Run Com "date" [ "+%a %_d %b %Y %H:%M:%S" ] "datel" 10
+                    ]
+       }
